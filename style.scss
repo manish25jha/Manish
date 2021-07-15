@@ -1,0 +1,27 @@
+@import './styles/color';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:  $bgGray;
+}
+
+#app{
+    &.home{
+        display: flex;
+        min-height: 100vh;
+    }
+    .sidebar{
+        width: 200px;
+        // background-color: $primaryColor;
+    }
+    .main{
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+}
